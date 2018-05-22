@@ -7,7 +7,7 @@ class App extends React.Component {
   // Render method describes component UI
   render() {
     return (
-      <div>
+      <div className='container'>
         <Popular />
       </div>
     )
