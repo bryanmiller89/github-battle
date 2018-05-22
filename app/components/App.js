@@ -1,4 +1,5 @@
 var React = require('react');
+var Popular = require('./Popular');
 
 // Create a React component
 class App extends React.Component {
@@ -7,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Hello World
+        <Popular />
       </div>
     )
   }
