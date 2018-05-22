@@ -9,7 +9,7 @@ function SelectLanguage (props) {
       {languages.map(function (lang) {
         return (
           <li
-            style={lang === props.selectedLangauge ? { color: 'red' } : null}
+            style={lang === props.selectedLanguage ? { color: 'red' } : null}
             onClick={props.onSelect.bind(null, lang)}
             key={lang}>
             {lang}
@@ -23,11 +23,11 @@ function SelectLanguage (props) {
 SelectLanguage.propTypes = {
   selectedLanguage: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired,
-}
+};
 
 class Popular extends React.Component {
   constructor (props) {
-    super(props);
+    super();
     this.state = {
       selectedLanguage: 'All'
     };
@@ -37,7 +37,7 @@ class Popular extends React.Component {
   updateLanguage(lang) {
     this.setState(function () {
       return {
-        selectedLangauge: lang
+        selectedLanguage: lang
       }
     });
   }
