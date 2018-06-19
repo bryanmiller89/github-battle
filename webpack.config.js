@@ -1,7 +1,8 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
 
-module.exports = {
+var config = {
   // Root entry file webpack begins with for building modules
   entry: './app/index.js',
   // Output path where webpack emits created bundles and named files
@@ -25,5 +26,7 @@ module.exports = {
       template: 'app/index.html'
     })
   ],
-  mode: "development"
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development'
 };
+
+module.exports = config;
