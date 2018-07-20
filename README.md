@@ -4,4 +4,4 @@ Web application that compares the GitHub accounts of two users. One user is decl
 
 ### Accessing the Application
 
-A Firebase deployed version of the application can be accessed here: https://github-battle-37e19.firebaseapp.com/
+A Firebase deployed version of the application can be accessed here: [Firebase Link](https://github-battle-37e19.firebaseapp.com/)
